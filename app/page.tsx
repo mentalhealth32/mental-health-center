@@ -1,6 +1,4 @@
 import Image from "next/image";
-import foro from "./foro.jpg";
-import map from "./map.png";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -10,9 +8,11 @@ export default function Home() {
     <div>
       <div className="containerStyl">
         <Image
-          src={foro}
+          src="./foro.jpg"
           alt="Лікарня"
           priority
+          width={100}
+          height={100}
           style={{
             width: "100%",
             height: "100vh",
@@ -121,7 +121,7 @@ export default function Home() {
               <MdEmail size={20} /> <p>example@hmail.com</p>
             </div>
             <div>
-              <Image src={map} alt="map" unoptimized={true}/>
+              {/* <Image src="./map.png" alt="map" unoptimized={true}/> */}
             </div>
           </div>
         </div>
