@@ -76,3 +76,34 @@ li {
   color: #2b468b;
   font-weight: 700;
 }
+/* Контейнер */
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* Напівпрозора плівка */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Напівпрозорий бокс */
+.box {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8); /* напівпрозорий білий фон */
+  padding: 80px 100px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333; /* текст темного кольору для контрасту */
+}
