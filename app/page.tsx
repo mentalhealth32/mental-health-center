@@ -23,6 +23,7 @@ export default function Home() {
             zIndex: -1,
             filter: "brightness(0.9)", // затемнюємо зображення
           }}
+          unoptimized={true}
         />
         <div className="overlayStyle"></div>
         <div className="boxStyle">
@@ -120,7 +121,7 @@ export default function Home() {
               <MdEmail size={20} /> <p>example@hmail.com</p>
             </div>
             <div>
-              <Image src={map} alt="map" />
+              <Image src={map} alt="map" unoptimized={true}/>
             </div>
           </div>
         </div>
